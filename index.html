@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <title>Cameron Gooch | Front End Developer</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <navbar>
+      <img src="logo-removebg-preview.png" alt="" />
+      <div class="menu">
+        <a class="menu-link" href="javascript:void(0)">About</a>
+        <a class="menu-link" href="javascript:void(0)">Skills</a>
+        <a class="menu-link" href="javascript:void(0)">Projects</a>
+        <a class="menu-link" href="javascript:void(0)">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon item scrollFade" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+    </navbar>
+
+    <!-- About Section -->
+    <section class="container item scrollFade" id="about-section">
+      <div class="my-name">
+        <h1>
+          Hello my name is <span>Cameron</span>.
+        </h1>
+        <h2>Web Developer</h2>
+      </div>
+      <div class="about">
+        <div class="about-txt">
+          <h2>About Me</h2>
+          <p>
+            Thanks for stopping by! I'm a front-end web developer and content creator who loves to make people smile. When I'm not
+            spending time with my family or doing live streaming on Twitch, I'm constantly trying to learn new things to expand my
+            knowledge.
+          </p>
+          <p>
+            I embrace challenges and love the feeling of overcoming an obstacle when I may have been previously stumped and web development
+            definitely fits that bill!!
+          </p>
+        </div>
+        <div class="profile-pic">
+          <img src="profile_pic.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="item scrollFade">
+      <div class="container skills-con">
+        <div class="skills-header">
+          <h2>Skills</h2>
+        </div>
+      <div class="skills">
+        <div>
+          <img src="icons/html.png" alt="" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="icons/css.png" alt="" />
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src="icons/js.png" alt="" />
+          <p>Javascript</p>
+        </div>
+        <div>
+          <img src="icons/pngwing.com(1).png" alt="" />
+          <p>Git</p>
+        </div>
+        <div>
+          <img src="icons/wordpress.png" alt="" />
+          <p>wordpress</p>
+        </div>
+        <div>
+          <img src="icons/pngwing.com.png" alt="" />
+          <p>jQuery</p>
+        </div>
+        <div>
+          <img src="icons/pngegg.png" alt="" />
+          <p>SASS</p>
+        </div>
+        <div>
+          <img src="icons/pngegg (3).png" alt="" />
+          <p>PHP</p>
+        </div>
+        <div>
+          <img src="icons/pngegg (4).png" alt="" />
+          <p>REACT</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="projects container item scrollFade">
+      <h2 id="projectHeader">Deployed Sites</h2>
+      <hr />
+      <div class="layout">
+        <div class="box-container live">
+          <a href="https://bespokeaestheticspb.com/" target="_blank">
+            <img src="icons/maxresdefault.webp" alt="" />
+          </a>
+        </div>
+        <div class="box-container live">
+          <a href="https://parkingmgt.com/" target="_blank">
+            <img src="icons/mq1.webp" alt="" />
+          </a>
+        </div>
+        <div class="box-container live">
+          <a href="https://showbirdnola.com" target="_blank">
+            <img src="icons/mq1 (1).webp" alt="" />
+          </a>
+        </div>
+        <div class="box-container live">
+          <a href="https://tefcotransportation.com" target="_blank">
+            <img src="icons/mq1 (2).webp" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- <h2 id="projectHeader">Personal Projects</h2>
+      <hr />
+      <div class="layout">
+        <div class="box-container">
+          <a href="https://cdg341.github.io/library/" target="_blank">
+            <img src="project-images/library screenshot.png" alt="" />
+          </a>
+          <h1>Library</h1>
+          <p><em>Built with: HTML, CSS, Javascript</em></p>
+          <p>An app that adds or deletes books from your library.</p>
+          <a href="https://cdg341.github.io/library/" target="_blank" class="buttons">Live</a>
+          <a href="https://github.com/cdg341/library" target="_blank" class="buttons">Code</a>
+        </div>
+        <div class="box-container">
+          <a href="https://cdg341.github.io/admin-dashboard/" target="_blank">
+            <img src="project-images/Screenshot_2022-05-12_13-52-45.png" alt="" />
+          </a>
+          <h1>Admin Dashboard</h1>
+          <p><em>Built with: HTML & CSS</em></p>
+          <p>Mock up of an admin dashboard</p>
+          <a href="https://cdg341.github.io/admin-dashboard/" target="_blank" class="buttons">Live</a>
+          <a href="https://github.com/cdg341/admin-dashboard" target="_blank" class="buttons">Code</a>
+        </div>
+        <div class="box-container">
+          <a href="https://cdg341.github.io/Tip-Calculator/" target="_blank">
+            <img src="project-images/desktop-design-completed.jpg" alt="" />
+          </a>
+          <h1>Tip Calculator</h1>
+          <p><em>Built with: HTML, CSS, Javascript</em></p>
+          <p>
+            Tip Calculator App for when you need to figure out how much you and your buddies are going to spend. Idea from
+            <a href="https://frontendmentor.io" target="_blank" style="text-decoration: none; color: #3fd0d4">FrontendMentor.io</a>
+          </p>
+          <a href="https://cdg341.github.io/Tip-Calculator/" target="_blank" class="buttons">Live</a>
+          <a href="https://github.com/cdg341/Tip-Calculator" target="_blank" class="buttons">Code</a>
+        </div>
+        <div class="box-container">
+          <a href="https://cdg341.github.io/calculator/" target="_blank">
+            <img src="project-images/calculator.png" alt="" />
+          </a>
+          <h1>Calculator</h1>
+          <p><em>Built with: HTML, CSS, Javascript</em></p>
+          <p>A calculator for when you need to bust out those calculations.</p>
+          <a href="https://cdg341.github.io/calculator/" target="_blank" class="buttons">Live</a>
+          <a href="https://github.com/cdg341/calculator" target="_blank" class="buttons">Code</a>
+        </div>
+        <div class="box-container">
+          <a href="https://cdg341.github.io/rock-paper-scissors/" target="_blank">
+            <img src="project-images/rock-paper-scissors.png" alt="" />
+          </a>
+          <h1>Rock Paper Scissors</h1>
+          <p><em>Built with: HTML, CSS, Javascript</em></p>
+          <p>We've all played rock, paper, scissors at some point. Will the odds be in your favor?</p>
+          <a href="https://cdg341.github.io/rock-paper-scissors/" target="_blank" class="buttons">Live</a>
+          <a href="https://github.com/cdg341/rock-paper-scissors" target="_blank" class="buttons">Code</a>
+        </div>
+        <div class="box-container">
+          <a href="https://cdg341.github.io/landing-page/" target="_blank">
+            <img src="project-images/odin-landing-page.png" alt="" />
+          </a>
+          <h1>Landing Page</h1>
+          <p><em>Built with: HTML & CSS</em></p>
+          <p>Nice looking landing page.</p>
+          <a href="https://cdg341.github.io/landing-page/" target="_blank" class="buttons">Live</a>
+          <a href="https://github.com/cdg341/landing-page" target="_blank" class="buttons">Code</a>
+        </div> -->
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <p>&copy;2022 - Cameron Gooch</p>
+      <div>
+        <a href="mailto: cdg341@gmail.com" target="_blank"><img src="icons8-email-64(1).png" alt="" /></a>
+        <a href="https://github.com/cdg341" target="_blank"><img src="icons8-github-64.png" alt="" /></a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

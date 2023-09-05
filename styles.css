@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  color: #222;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  /* width: 80rem; */
+  padding: 50px 8vw;
+  margin-top: 140px;
+}
+
+/*------------------- Navbar section -------------------- */
+navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 200px;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 1px 5px #222;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+navbar img {
+  width: 52px;
+  padding: 0;
+  margin: 0;
+  filter: invert(1);
+}
+
+navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+  transition: 0.3s ease-out;
+}
+
+navbar a:hover {
+  color: #3fd0d4;
+}
+
+.menu {
+  margin-right: 50px;
+}
+
+a.icon {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+}
+
+/*------------------- Media Query for navbar -------------------- */
+
+@media screen and (max-width: 900px) {
+  navbar {
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  navbar .menu {
+    display: none;
+  }
+  a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  navbar a {
+    display: block;
+  }
+}
+
+/*------------------- About me section -------------------- */
+.my-name {
+  text-align: center;
+}
+
+.my-name h1 {
+  font-size: 2.5rem;
+}
+
+.my-name h2 {
+  font-size: 1.8rem;
+}
+
+.my-name span {
+  color: #3fd0d4;
+  font-size: 2.5rem;
+}
+
+.my-name p {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 10px 0;
+}
+
+.about-txt {
+  text-align: left;
+  width: 40rem;
+}
+
+.about-txt h2 {
+  color: #3fd0d4;
+  font-size: 1.5rem;
+}
+
+.about-txt p {
+  margin-top: 10px;
+}
+.profile-pic {
+  text-align: center;
+}
+
+.profile-pic img {
+  box-shadow: 20px 25px #3fd0d4;
+  border-radius: 8px;
+}
+
+/*------------------- Media Query About Section -------------------- */
+@media screen and (max-width: 900px) {
+  .container {
+    display: block;
+    width: auto;
+    padding: 25px;
+  }
+  #about-section {
+    margin-bottom: -80px;
+  }
+  .about {
+    display: block;
+    width: auto;
+  }
+  .about-txt {
+    width: auto;
+  }
+  .about-txt p {
+    font-size: 0.9rem;
+  }
+  .about-txt h1 {
+    text-align: center;
+    text-shadow: none;
+  }
+  .profile-pic {
+    margin: 0 auto;
+  }
+  .profile-pic img {
+    margin-top: 50px;
+  }
+}
+
+/*------------------- Skills section -------------------- */
+.skills-header h2 {
+  font-size: 1.5rem;
+  color: #3fd0d4;
+  margin: 0 auto;
+  /* width: 80rem; */
+}
+
+.container.skills-con {
+  background: #102a42;
+  /* width: 100% */
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.skills img {
+  width: 200px;
+  border: 2px solid #3fd0d4;
+  padding: 15px 50px;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+
+.skills p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/*------------------- Media Query Skills Section -------------------- */
+@media screen and (max-width: 900px) {
+  /* .skills {
+    display: block;
+    text-align: center;
+  } */
+  .skills-header h1 {
+    text-shadow: none;
+    text-align: center;
+  }
+  .skills img {
+    box-shadow: 0 0 15px black;
+    margin-left: 20px;
+  }
+  .skills p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+}
+
+/*------------------- Project section -------------------- */
+.layout {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+}
+
+.layout div p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.layout img {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.box-container {
+  border: 1px solid #3fd0d4;
+  border-radius: 8px;
+  width: 21rem;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.box-container.live img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projects > h2 {
+  scroll-margin-top: 100px;
+}
+
+.projects h2 {
+  font-size: 1.5rem;
+  color: #3fd0d4;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+.projects img {
+  width: 300px;
+  height: 170px;
+  transform: scale(1);
+  transition: 0.3s ease-out;
+}
+
+.projects img:hover {
+  transform: scale(0.96);
+  transition: 0.3s ease-out;
+}
+
+.buttons {
+  padding: 0 15px;
+  border: 2px solid #3fd0d4;
+  color: black;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  background-color: white;
+  padding: .2rem 1rem;
+}
+
+.buttons:hover {
+  background-color: #102a42;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  box-shadow: 0 0 5px lightgray;
+  border-color: #102a42;
+}
+
+/*------------------- Media Query Project Section -------------------- */
+@media screen and (max-width: 900px) {
+  /* .layout {
+    display: block;
+    text-align: center;
+  } */
+  .layout p,
+  em {
+    font-size: 0.8rem;
+  }
+  .box-container img {
+    width: 275px;
+  }
+  .projects h2 {
+    text-shadow: none;
+    text-align: center;
+  }
+  .box-container {
+    box-shadow: none;
+    border: 1px solid #3fd0d4;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+  }
+}
+.projects.container {
+  margin-top: 50px;
+}
+
+/*------------------- Contact section -------------------- */
+.contact {
+  text-align: center;
+  background-color: #102a42;
+  padding: 10px 0;
+}
+
+.contact div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+  color: #3fd0d4;
+  text-shadow: 0 0 10px lightgray;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.contact img {
+  width: 70%;
+}
+
+.contact p {
+  margin: 0;
+}
+
+/* Scroll Fade In Effect */
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scrollFade--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scrollFade--animate {
+  transition: opacity 2s;
+}
